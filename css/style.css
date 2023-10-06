@@ -1,5 +1,5 @@
 .app-main {
-    padding: 60px;
+    padding: 50px;
     overflow: auto;
     height: 100vh;
     background-image: linear-gradient(to right bottom, #193764, #003d5e, #034154, #1d434a, #304443);
@@ -11,6 +11,9 @@
     gap: 15px;
     max-width: 1000px;
     margin: 0 auto;
+    border: 3px solid rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .block {
@@ -27,6 +30,7 @@
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     transition: all 500ms;
+    user-select: none;
 }
 
 .block:hover {
