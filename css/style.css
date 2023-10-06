@@ -1,26 +1,16 @@
-body {
-    background-color: rgb(223, 73, 73);
-    
-}
-
-
 .app-main {
     padding: 60px;
     max-width: 1200px;
     margin: 0 auto;
     overflow: auto;
     height: 100vh;
-
-    
-    
+    background-image: linear-gradient(to right bottom, #193764, #003d5e, #034154, #1d434a, #304443);
 }
-
-
 
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    gap: 10px; 
+    gap: 15px;
 }
 
 .block {
@@ -34,13 +24,14 @@ body {
     padding: 10px;
     font-size: 16px;
     font-weight: 600;
-    box-shadow: inset 0px 0px 21px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     transition: all 500ms;
 }
 
 .block:hover {
     transform: rotate(2turn) scale(0.5);
+    border-radius: 50px;
 
 }
 
