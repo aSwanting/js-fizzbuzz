@@ -1,26 +1,26 @@
 
 
 
-for (let i = 0; i < 100; i++) {
+for (let i = 1; i <= 100; i++) {
     
     const container = document.querySelector(".grid")
     const newDiv = document.createElement("div")    
 
-    if ((i+1) % 3 === 0 && (i+1) % 5 === 0) {
+    if (i % 3 === 0 && i % 5 === 0) {
         newDiv.append('FizzBuzz')
-        newDiv.className = "block fizz-buzz"
+        newDiv.className = "block fizz-buzz"        
 
-    } else if ((i+1) % 3 === 0) {
+    } else if (i % 3 === 0) {
         newDiv.append('Fizz')
-        newDiv.className = "block fizz"
+        newDiv.className = "block fizz"    
 
-    } else if ((i+1) % 5 === 0) {
+    } else if (i % 5 === 0) {
         newDiv.append('Buzz')
-        newDiv.className = "block buzz"
+        newDiv.className = "block buzz"       
 
     } else {
-        newDiv.append(i+1)
-        newDiv.className = "block"
+        newDiv.append(i)
+        newDiv.className = "block"        
     }
 
     container.append(newDiv)
