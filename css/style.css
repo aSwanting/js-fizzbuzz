@@ -1,0 +1,66 @@
+body {
+    background-color: rgb(223, 73, 73);
+    
+}
+
+
+.app-main {
+    padding: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+    height: 100vh;
+
+    
+    
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 10px; 
+}
+
+.block {
+    color: white;
+    background-color: rgba(98, 230, 153, 0.5);
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: inset 0px 0px 21px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    transition: all 500ms;
+}
+
+.block:hover {
+    transform: rotate(2turn) scale(0.5);
+
+}
+
+.fizz {
+    background-color: rgba(255, 253, 118, 0.5);
+}
+
+.buzz {
+    background-color: rgba(241, 141, 225, 0.5);
+}
+
+.fizz-buzz {
+    background-color: rgba(126, 116, 255, 0.5);
+}
+
+::-webkit-scrollbar {
+    background-color: transparent
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(55, 167, 219, 0.308);
+    border-radius: 20px;
+}
