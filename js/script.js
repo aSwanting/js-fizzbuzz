@@ -1,6 +1,5 @@
 
 
-
 for (let i = 1; i <= 100; i++) {
     
     const container = document.querySelector(".grid")
